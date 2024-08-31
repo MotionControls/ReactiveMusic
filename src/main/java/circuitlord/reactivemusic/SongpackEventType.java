@@ -3,37 +3,39 @@ package circuitlord.reactivemusic;
 public enum SongpackEventType {
 
     MAIN_MENU,
-    CREDITS,
+    CREDITS,    //  TODO
 
+    HOME,   //  TODO
 
-    HOME,
+    // Events
+    BOSS,   //  TODO, Intended to activate when a boss is spawned.
+            //  Not sure how I'll check for this, but atm thinking of checking if a hp bar is active.
+            //  Not sure how to check for that but I'm sure I'll figure it out.
 
-
-
-    // --- TIME ---
+    // Time
     DAY,
     NIGHT,
     SUNRISE,
     SUNSET,
 
-    // --- Weather ---
+    // Weather
     RAIN,
-    SNOW,
-
+    SNOW,   //  TODO
 
     // Dimension
-
     NETHER,
     END,
     OVERWORLD,
 
-    // --- world height ---
+    // World Height
     UNDERWATER,
     UNDERGROUND,
     DEEP_UNDERGROUND,
+    DEEP_MAX,   //  TODO, Intended to activate when you hit roughly the lowest possible height.
     HIGH_UP,
+    HIGH_MAX,   //  TODO, Intended to activate when you hit the max possible height.
 
-    // --- Entities ---
+    // Entities
     MINECART,
     BOAT,
     HORSE,
@@ -42,43 +44,22 @@ public enum SongpackEventType {
     //Actions
     FISHING,
     DYING,
-
+    PUMPKINHEAD,    //  TODO, Intended to activate when you put on a pumpkin.
 
     // Biomes
+    // https://minecraft.fandom.com/wiki/Biome/ID
     FOREST,
     MOUNTAIN,
-    DESERT,
+    DESERT, //  TODO
     BEACH,
+    VOID,   //  TODO: Void :)
+    PLAINS, //  TODO: Plains, Sunflower Plains
+    SNOW_PLAINS,    //  TODO: Snowy Plains, Ice Spikes
+    SWAMP,  //  TODO: Swamp, Mangrove Swamp
+    SNOW_FOREST,    //  TODO: Snowy Taiga, Grove
 
-
-
+    // Achievments
+    //  TODO
 
     GENERIC
-
-
-
-
 }
-
-
-/*
-public static final String EVENT_MAIN_MENU = "mainMenu";
-public static final String EVENT_IN_NETHER = "nether";
-public static final String EVENT_IN_END = "end";
-public static final String EVENT_NIGHT = "day";
-public static final String EVENT_DAY = "night";
-public static final String EVENT_RAIN = "rain";
-public static final String EVENT_UNDERWATER = "underwater";
-public static final String EVENT_UNDERGROUND = "underground";
-public static final String EVENT_DEEP_UNDEGROUND = "deepUnderground";
-public static final String EVENT_HIGH_UP = "highUp";
-public static final String EVENT_MINECART = "minecart";
-public static final String EVENT_BOAT = "boat";
-public static final String EVENT_HORSE = "horse";
-public static final String EVENT_PIG = "pig";
-public static final String EVENT_FISHING = "fishing";
-public static final String EVENT_DYING = "dying";
-//public static final String EVENT_PUMPKIN_HEAD = "pumpkinHead";
-public static final String EVENT_CREDITS = "credits";
-public static final String EVENT_GENERIC = "generic";
-*/
